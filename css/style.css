@@ -1,0 +1,46 @@
+@import "Roboto/roboto.css" screen; 
+body {
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    background-color:#fff;
+}
+.wrapper {
+    overflow: hidden;
+}
+.header {
+    max-width: 1920px; 
+    height: 76px;  
+    margin: 0 auto;
+    background-color: #01983b;
+    background-image: url(../sources/pattern.png);  
+}
+.menu {
+     width: 980px;
+    padding-top: 21px;
+    margin: 0 auto;
+}
+ .flex-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.flex-menu > div > a {
+    display: block; 
+    box-sizing: border-box;
+    line-height: 30px;       /* ?Без этого текст пунктов меню уходит несколько вверх  ??*/
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: sans-serif; /* ? убирая галочку в отладчике наблюдаю выравнивание текста (при неуказанном line-heigth=30)*/
+    font-weight: normal;
+    font-size: 16px; 
+  
+}
+.flex-menu > div > a:hover {
+    border: 2px solid  #fff; /* ? Вроде как работает, НО текст меню "плывет" вниз, как это устранить?*/
+    border-left: none;
+    border-right: none; 
+    transition: border 0.4s;
+}
