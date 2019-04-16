@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'EuropeExt';
+    src: url('EuropeExtBold.woff2') format('woff2'),
+        url('EuropeExtBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuropeExt';
+    src: url('EuropeExt.woff2') format('woff2'),
+        url('EuropeExt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

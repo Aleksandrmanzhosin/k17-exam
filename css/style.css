@@ -1,7 +1,7 @@
-@import "Roboto/roboto.css" screen; 
+@import "../fonts/stylesheet.css" screen; 
 body {
     margin: 0;
-    font-family: 'roboto', sans-serif;
+    font-family: sans-serif;
     background-color:#fff;
 }
 .wrapper {
@@ -11,12 +11,13 @@ body {
     max-width: 1920px; 
     height: 76px;  
     margin: 0 auto;
+    display: flex;
+    align-items: center;
     background-color: #01983b;
     background-image: url(../sources/pattern.png);  
 }
 .menu {
-     width: 980px;
-    padding-top: 21px;
+    width: 980px;
     margin: 0 auto;
 }
  .flex-menu {
@@ -33,14 +34,117 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-family: sans-serif; /* ? убирая галочку в отладчике наблюдаю выравнивание текста (при неуказанном line-heigth=30)*/
+    font-family: sans-serif; 
     font-weight: normal;
     font-size: 16px; 
-  
+    border-bottom: 2px solid transparent; /*чтобы не плыли пункты, линии есть сразу, но не видны*/
+    border-top: 2px solid transparent;
 }
 .flex-menu > div > a:hover {
-    border: 2px solid  #fff; /* ? Вроде как работает, НО текст меню "плывет" вниз, как это устранить?*/
-    border-left: none;
-    border-right: none; 
+    border-color: #fff;
     transition: border 0.4s;
+}
+.screen-1{
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 749px;  /* Что-то я не пойму, почему обязательно надо указывать высоту div, мы же картинку в него вставляем*/
+    background-image: url(../images/Foto-1.png);
+}
+.screen-2{
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 797px;  
+    background-image: url(../images/screen-2.png);
+}
+
+.logo{
+    width: 374px;
+    height: 29px;
+    padding-top: 69px;
+    margin: 0 auto;
+ }
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ .title {
+     font-family: 'EuropeExt';
+     font-size: 30px;                    /*Шрифт подключил, но в макете буквы толще*/
+     font-style: normal;
+     font-weight: bold;
+     text-align: center;
+     text-transform: uppercase;
+     color: #073d79;
+     padding-top: 25px; /*Это по макету, но у параграфа свой паддинг, поэтому сначала обнуляем для всех P */
+     padding-bottom: 10px;
+ }
+ .video{
+    width: 787px;
+    height: 403px;
+    margin: 0 auto;
+    position: relative;
+ }
+ .in-video{
+      position: absolute;
+      right: 95px;
+ }
+ .shadow-2 { 
+    width: 787px;
+    height: 79px;
+    background-image: url(../images/shadow-2.png);
+    position: absolute;
+    bottom: 0;
+ }
+.novaboard{
+    margin: 0 auto;
+    width: 840px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #0a274d;
+}
+.know{
+    margin: 0 auto;
+    width: 406px;
+    height: 53px;
+    border-radius: 5px;
+    background-color: #01983b;
+    background-image: url(../sources/pattern.png);
+    box-shadow: 1px 2px 6px 2px gray;
+}
+.know > a {
+    line-height: 53px;
+    box-sizing: border-box;
+    display: block;
+    font-family: 'EuropeExt';
+    font-size: 24px;          
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 40px;
+    transition: all 0.5s;
+
+}
+.know > a:hover  {
+    background-color: #93d1ab;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.know > a:active {
+    background-color: #287144;
+    border-radius: 5px;
+}
+.screen-3 {
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 826px;  
+    background-image: url(../images/screen-3.png);
+}
+.screen-4 {
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 759px;   
+    background-color: #fff;
+    background-image: url(../images/screen-4.png);
 }
