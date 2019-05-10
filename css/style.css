@@ -47,14 +47,66 @@ body {
 .screen-1{
     max-width: 1920px; 
     margin: 0 auto;
-    height: 749px;  /* Что-то я не пойму, почему обязательно надо указывать высоту div, мы же картинку в него вставляем*/
-    background-image: url(../images/Foto-1.png);
+    height: 720px;  /* Что-то я не пойму, почему обязательно надо указывать высоту div, мы же картинку в него вставляем*/
+    background-image: url(../images/screen-1.jpg);
 }
+.content{
+    display: flex;
+    max-width: 980px;
+    margin: 0 auto;
+    height: 140px;
+    justify-content: space-between;
+   /* background-color:rgba(91, 144, 187, 0.5);*/
+}
+.logo-1{
+    display: flex;
+    align-items: center;
+    max-width: 490px;
+    height: 140px;   
+}
+.logo-1 > a{
+    width: 396px;
+    height: 56px; 
+    background-image: url(../images/logo-1.png);
+} 
+.contacts{
+    max-width: 490px;
+    height: 140px;
+}
+.seti {
+    padding-right: 0;
+    padding-top: 30px;
+    color: #01983b;
+    font-family: sans-serif; 
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px; 
+}
+.instagram >a:hover {
+   opacity: 0.3;
+   transition: all 0.4s;
+}
+.wk >a:hover {
+    opacity: 0.3;
+    transition: all 0.4s;
+ }
+ 
+ .slick-slider{
+    max-width: 980px; 
+    height: 493px;
+    margin: 0 auto;
+ }
+ /*.first {
+    background-image: url(../images/slaides-1.png);
+ }
+ .second{
+    background-image: url(../images/slaides-2.png);
+ }*/
 .screen-2{
     max-width: 1920px; 
     margin: 0 auto;
     height: 797px;  
-    background-image: url(../images/screen-2.png);
+    background-image: url(../images/screen-2.jpg);
 }
 
 .logo{
@@ -139,12 +191,35 @@ p {
     max-width: 1920px; 
     margin: 0 auto;
     height: 826px;  
-    background-image: url(../images/screen-3.png);
+    background-image: url(../images/screen-3.jpg);
 }
 .screen-4 {
     max-width: 1920px; 
     margin: 0 auto;
     height: 759px;   
-    background-color: #fff;
-    background-image: url(../images/screen-4.png);
+    background-image: url(../images/screen-4.jpg);
+}
+.screen-5 {
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 502px;   
+    background-image: url(../images/screen-5.jpg);
+}
+.screen-6 {
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 539px;   
+    background-image: url(../images/screen-6.jpg);
+}
+.screen-7 {
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 501px;   
+    background-image: url(../images/screen-7.jpg);
+}
+.footer {
+    max-width: 1920px; 
+    margin: 0 auto;
+    height: 312px;   
+    background-image: url(../images/footer.jpg);
 }
