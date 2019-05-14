@@ -1,4 +1,3 @@
-@import "../fonts/stylesheet.css" screen; 
 body {
     margin: 0;
     font-family: sans-serif;
@@ -91,22 +90,25 @@ body {
     transition: all 0.4s;
  }
  
- .slick-slider{
+.slider{
     max-width: 980px; 
     height: 493px;
     margin: 0 auto;
  }
- /*.first {
-    background-image: url(../images/slaides-1.png);
+ 
+ .shadow-1 {
+    width: 1148px;
+    height: 88px;
+    margin: 0 auto;
+    background-image: url(../images/shadow-1.png);
+
  }
- .second{
-    background-image: url(../images/slaides-2.png);
- }*/
 .screen-2{
     max-width: 1920px; 
     margin: 0 auto;
     height: 797px;  
     background-image: url(../images/screen-2.jpg);
+   
 }
 
 .logo{
@@ -121,7 +123,7 @@ p {
 }
  .title {
      font-family: 'EuropeExt';
-     font-size: 30px;                    /*Шрифт подключил, но в макете буквы толще*/
+     font-size: 2rem;                  
      font-style: normal;
      font-weight: bold;
      text-align: center;
@@ -131,31 +133,30 @@ p {
      padding-bottom: 10px;
  }
  .video{
-    width: 787px;
-    height: 403px;
+    width: 576px;
+    height: 318px;
     margin: 0 auto;
-    position: relative;
- }
- .in-video{
-      position: absolute;
-      right: 95px;
  }
  .shadow-2 { 
     width: 787px;
-    height: 79px;
+    height: 54px;
     background-image: url(../images/shadow-2.png);
-    position: absolute;
-    bottom: 0;
+    margin: 0 auto;
  }
 .novaboard{
     margin: 0 auto;
-    width: 840px;
+    width: 840px;  
+}
+.novaboard > p{
     line-height: 17px;
+    font-family: monospace;
+    text-align: center;
     font-size: 14px;
-    color: #0a274d;
+    color: #0a274d;                        /*проверить цвет*/
 }
 .know{
     margin: 0 auto;
+    margin-top: 50px;
     width: 406px;
     height: 53px;
     border-radius: 5px;
@@ -190,15 +191,25 @@ p {
 .screen-3 {
     max-width: 1920px; 
     margin: 0 auto;
-    height: 826px;  
+    height: 826px;    
     background-image: url(../images/screen-3.jpg);
-}
+  }
+  .title-3{
+      padding-top: 50px;
+  }
+
 .screen-4 {
     max-width: 1920px; 
-    margin: 0 auto;
-    height: 759px;   
+    height: 759px;  
+    margin: 0 auto;  
     background-image: url(../images/screen-4.jpg);
-}
+    background-color: rgba(0, 0, 0, 0.5);
+}                          
+ /*.zalivka {
+    max-width: 1920px; 
+    height: 759px; 
+    background-color: rgba(0, 0, 0, 0.5);
+}*/
 .screen-5 {
     max-width: 1920px; 
     margin: 0 auto;
@@ -216,6 +227,7 @@ p {
     margin: 0 auto;
     height: 501px;   
     background-image: url(../images/screen-7.jpg);
+    
 }
 .footer {
     max-width: 1920px; 
