@@ -2,10 +2,10 @@ body {
     margin: 0;
     font-family: sans-serif;
     background-color:#fff;
+    
 }
 .wrapper {
-    overflow: hidden;
-}
+   }
 .header {
     max-width: 1920px; 
     height: 76px;  
@@ -147,7 +147,6 @@ color: yellow;
     margin: 0 auto;
    /* height: 797px;  */
     background-image: url(../images/screen-2.jpg);
-   
 }
 
 .logo{
@@ -195,13 +194,14 @@ p {
 }
 .know{
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 35px;
+    margin-bottom: 25px;
     width: 406px;
     height: 53px;
     border-radius: 5px;
     background-color: #01983b;
     background-image: url(../sources/pattern.png);
-    box-shadow: 1px 2px 6px 2px gray;
+    box-shadow: 0px 2px 5px 1px gray;
 }
 .know > a {
     line-height: 53px;
@@ -248,9 +248,8 @@ p {
 .civil-construction {
     display: block; 
     width: 609px;
-    height: 309px;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
-    linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/civilin.png);
+    height: 309px;                                                       /* в фотошопе "очистить стиль слоя" */
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/civilin.png);
 }
 .title-flex1 >p {
     font-family: sans-serif;
@@ -273,15 +272,13 @@ p {
     display: block; 
     width: 609px;
     height: 309px;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
-    linear-gradient(to top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/industrial.png);
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/industrial.png);
 }
 .content-left{
     display: block;
     height: 18px;
     margin-top: 6px;
-    margin-right: 0;
-    padding-right: 0px;
+    text-align: right;
    }
 .content-left >p{
     display: inline-block;
@@ -291,13 +288,12 @@ p {
     font-weight: normal;
     padding-right: 50px;
     padding-left: 35px;
+    padding-top: 2px;
     text-transform: uppercase;
     color: #fff;
-    text-align: right; 
     background-color: #01983b;
     position: relative;
-    right: 0px;
-  }
+}
 .content-right{
     display: block;
     height: 18px;
@@ -311,12 +307,50 @@ p {
     font-weight: normal;
     padding-right: 35px;
     padding-left: 50px;
+    padding-top: 2px;
     text-transform: uppercase;
     color: #fff;
-    text-align: right; 
-    background-color: #01983b;
+    background-color: rgba(1, 152, 59, 1);
     position: relative;
   }
+.content-right p::before {
+content: '';
+height: 18px;
+width: 47px;
+background-color: rgba(1, 152, 59, 0.6);
+position: absolute;
+right: -47px;
+top: 0px;
+}
+.content-right p::after {
+    content: '';
+    height: 18px;
+    width: 48px;
+    background-color: rgba(1, 152, 59, 0.3);
+    position: absolute;
+    right: -95px;
+    top: 0px;
+    }
+.content-left p::before {
+    content: '';
+    height: 18px;
+    width: 47px;
+    background-color: rgba(1, 152, 59, 0.6);
+    position: absolute;
+    left: -47px;
+    top: 0px;
+}
+.content-left p::after {
+    content: '';
+    height: 18px;
+    width: 48px;
+    background-color: rgba(1, 152, 59, 0.3);
+    position: absolute;
+    left: -95px;
+    top: 0px;
+}
+
+
 .logo-2-2 {
     width: 100%;
     height: 24px;
