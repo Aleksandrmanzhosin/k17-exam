@@ -52,7 +52,7 @@ color: yellow;
 .screen-1{
     max-width: 1920px; 
     margin: 0 auto;
-    height: 720px;  /* Что-то я не пойму, почему обязательно надо указывать высоту div, мы же картинку в него вставляем*/
+   /* height: 720px; */ 
     background-image: url(../images/screen-1.jpg);
 }
 .content{
@@ -61,8 +61,7 @@ color: yellow;
     margin: 0 auto;
     height: 140px;
     justify-content: space-between;
-   /* background-color:rgba(91, 144, 187, 0.5);*/
-}
+  }
 .logo-1{
     display: flex;
     align-items: center;
@@ -101,6 +100,7 @@ color: yellow;
 }
 .tel p>a:hover{
    text-decoration: underline;
+   transition: 0.4s;
 }
 .tel p>a:active{
     color: #000;
@@ -146,6 +146,7 @@ color: yellow;
     margin: 0 auto;
    /* height: 797px;  */
     background-image: url(../images/screen-2.jpg);
+    background-repeat: no-repeat;
 }
 
 .logo{
@@ -213,7 +214,7 @@ p {
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    padding-left: 40px;
+    text-align: center;
     transition: all 0.5s;
 
 }
@@ -353,8 +354,6 @@ top: 0px;
     width: 100%;
     height: 24px;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-  /*  url(../images/logo-2.png);  
-    background-repeat: no-repeat;*/
     position: relative;
     top: 159px;
 }
@@ -389,7 +388,6 @@ top: 0px;
     box-sizing: border-box;
     width: 191px;
     height: 260px;
-   /* border: solid 2px red; */
 }
 .conteiner-screen3 p{
     font-family: sans-serif;
@@ -514,7 +512,7 @@ top: 0px;
     border-spacing: 9px 6px;
 }
 .table_screen5 tr{
-    height: 40px; /*без этого никак не получается !?*/
+    height: 40px;                                  /*без этого никак не получается !?*/
 }
 .table_screen5 td{
     position: relative;
@@ -529,6 +527,7 @@ top: 0px;
     background-repeat: no-repeat;
     background-position: 15px 3px;
     background-color: #ff0000;
+    text-align: top;                            /*Не работает (см. Какие задачи решает> Расточительность)*/
    }
 .table_screen5 td:last-child {
     background-image: url(../images/img5-right.png);
@@ -577,20 +576,154 @@ top: 0px;
 .screen-6 {
     max-width: 1920px; 
     margin: 0 auto;
-    height: 539px;   
-    background-image: url(../images/screen-6.jpg);
+   /* height: 539px; */  
+
 }
+.logo-6{
+    padding-top: 10px;
+}
+.title-6 {
+    padding-top: 10px; 
+    padding-bottom: 20px;
+}
+.lightbox{
+    max-width: 880px; 
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.logo_top100{
+    margin: 0 auto;
+    width: 558px;
+    height: 148px;
+    background-image: url(../images/logo-konkurs_top100.png);
+    background-repeat: no-repeat;
+    padding-bottom: 45px;
+}
+
 .screen-7 {
     max-width: 1920px; 
     margin: 0 auto;
-    height: 501px;   
-    background-image: url(../images/screen-7.jpg);
-    
+  /*  height: 501px;  */
 }
-
+.cont{
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    width: 1144px;
+    height: 201px;             /*Как позиционировать этот блок, чтобы он не уплывал при скролле?? Ответ: max-width родителю*/
+    background-color: #01983b;
+    background-image: url(../sources/pattern.png);
+    border-radius: 0px 0px 21px 21px;
+}
+.title-7{
+    color: #fff;
+    padding-bottom: 0;
+}
+.ooo {
+    margin: 0 auto;
+    width: 540px;  
+}
+.ooo > p{
+     padding-top: 10px;
+     color: #fff;
+     font-family: sans-serif; 
+     font-weight: normal;
+     font-size: 18px; 
+     text-align: center;
+ }
+ .ooo > p:last-child{
+    font-size: 14px; 
+    padding-top: 20px;
+ }
+.email {
+         margin: 0 auto;
+         width: 340px; 
+}
+.email p {
+text-align: center;
+padding-top: 10px;
+}
+ .email p>a{   
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff; 
+    transition: 0.4s;
+}
+.email p>a:hover{
+    text-decoration: underline;
+    transition: 0.4s;
+ }
+ .email p>a:active{
+     color: #000;
+  }
 .footer {
     max-width: 1920px; 
     margin: 0 auto;
     height: 312px;   
     background-image: url(../images/footer.jpg);
 }
+.logo-footer{
+    width: 335px;
+    height: 75px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+.god{
+    margin: 0 auto;  
+    width: 340px; 
+    padding-top: 6px;
+}
+.god >p{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff; 
+    text-align: center;
+}
+.setifooter {
+    padding-top: 15px;
+     margin: 0 auto;
+
+ }
+.setifooter >p {  
+     color: #fff;
+     font-family: sans-serif; 
+     font-weight: bold;
+     font-size: 12px; 
+     text-align: center;
+ }
+ .setilogo_conteiner{
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 75px; 
+    height: 32px;
+ }
+ .setilogo{
+    display: flex;
+    justify-content: space-between;
+  
+ }
+ .setilogo div >a{
+    display: block;
+}
+.setilogo div >a:hover {
+    opacity: 0.7;
+    transition: all 0.4s;
+ }
+ .razrab{
+     padding-top: 80px;            /* не понимаю, почему не получается задать padding-bottom*/
+     margin: 0 auto;
+     width: 280px;
+     height: 25px;
+ }
+ .razrab p>a{
+     display: block;
+     color: #fff;
+     font-family: sans-serif; 
+     font-weight: bold;
+     text-transform: uppercase;
+     text-decoration: none;
+     font-size: 12px; 
+     text-align: center;
+ }
+ 
